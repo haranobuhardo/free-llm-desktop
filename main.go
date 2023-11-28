@@ -26,7 +26,7 @@ func main() {
 	})
 
 	KeysQuit, _ := keys.Parse("Ctrl+Q")
-	FileMenu.AddText("&Refresh", KeysQuit, func(_ *menu.CallbackData) {
+	FileMenu.AddText("&Exit", KeysQuit, func(_ *menu.CallbackData) {
 		runtime.Quit(app.ctx)
 	})
 
